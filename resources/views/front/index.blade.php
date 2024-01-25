@@ -243,10 +243,10 @@
                                     <img src="{!! Request::root() !!}{!! Storage::disk('local')->url('service/image/' . $service->img) !!}" alt="">
                                 </div>
                                 <div class="service-one__content">
-                                    <div class="services-one__icon">
+                                    {{-- <div class="services-one__icon">
                                         <img src="{!! Request::root() !!}{!! Storage::disk('local')->url('service/image/' . $service->icon) !!}" alt=""
                                             width="50px">
-                                    </div>
+                                    </div> --}}
                                     <h2 class="service-one__title line-clamp-2"><a
                                             href="{!! route('front.service.service_single', $service->slug) !!}">{{ $service->getTitle() }}</a>
                                     </h2>

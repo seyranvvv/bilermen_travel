@@ -68,7 +68,7 @@
     </section>
     <!--Main Slider End-->
 
-    {{-- <!--Feature One Start-->
+    <!--Feature One Start-->
     <section class="feature-one">
         <div class="container">
             <div class="feature-one__inner">
@@ -99,7 +99,7 @@
             </div>
         </div>
     </section>
-    <!--Feature One End--> --}}
+    <!--Feature One End-->
 
 
     <!--About One Start-->

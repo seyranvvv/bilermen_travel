@@ -2,9 +2,9 @@
 
 return [
     'app-name' => "Bilermen Nesil",
-    'description' => 'Şu günki güne "Hazar ätiýaçlandyryş" AGPJ-i hem içki bazarda, hem-de halkara derejede ätiýaçlandyrmagyň we täzeden ätiýaçlandyrmagyň 19 görnüşi boýunça hyzmatlary teklip edýär.',
+    'description' => 'Şu günki güne "Bilermen Nesil" AGPJ-i hem içki bazarda, hem-de halkara derejede ätiýaçlandyrmagyň we täzeden ätiýaçlandyrmagyň 19 görnüşi boýunça hyzmatlary teklip edýär.',
     'address' => 'Türkmenistan, Aşgabat, 744013, Atamyrat Nyýazow şaýoly, 157.',
-    'keywords' => 'Hazar Ätiýaçlandyryş, Ashgabat, Turkmenistan',
+    'keywords' => 'Bilermen Nesil, Ashgabat, Turkmenistan',
 
     'captcha' => 'Jogabyny ýazyň',
 
@@ -117,7 +117,11 @@ return [
     'rights' => 'Ähli hukuklar goragly.',
     'habarlashmak' => 'Habarlaşmak üçin',
     'mowzuk' => 'Mowzuk',
-    'services' => 'Syýahatlar',
+    'tours' => 'Syýahatlar',
+    'our_tours' => 'Biziň syýahatlarymyz',
+    'services' => 'Hyzmatlarymyz',
+    'tour_itinerary' => 'Syýahat programmasy',
+    'tour_itinerary' => 'Программа тура',
     'it' => 'IT merkezi',
     'home_image' => 'Uly suraty',
     'banner_image' => 'Banner suraty',

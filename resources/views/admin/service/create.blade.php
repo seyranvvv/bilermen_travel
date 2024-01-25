@@ -5,7 +5,7 @@
     <div class="d-flex align-items-center justify-content-between">
         <div class="h4 mb-0">
             <a href="{{ route('admin.service.index') }}">
-                <i class="fas fa-caret-left"></i> @lang('transFront.services')
+                <i class="fas fa-caret-left"></i> @lang('transFront.tours')
             </a>
             <span class="text-gray-500">/</span>
             @lang('transAdmin.create')
@@ -185,16 +185,19 @@
                     <script>
                         function image_enUpload(input) {
                             if (input.files && input.files[0]) {
-                                console.log(input.files[0])
-                                for (const file of input.files) {
-                                    // `
-                                    // <img src="{{ asset('front/placeholder.jpg') }}" alt="@lang('transAdmin.not-found')"
-                                    //     class="img-fluid image_en_upload img-max border">
-                                    // `
-                                    console.log('hello')
-                                    console.log(file.name);
-                                    console.log(file);
-                                }
+                                // $('.uploaded-imgs').empty(image);
+                                // for (const file of input.files) {
+                                //     let image = `
+                                //         <img src="${e.target.result}" alt="not-found"
+                                //             class="img-fluid image_en_upload_${index} img-max border">
+                                //         `;
+                                //     $('.uploaded-imgs').append(image);
+                                //     var reader = new FileReader();
+                                //     reader.onload = function (e) {
+                                //         $(`.image_en_upload_${index}`).attr('src', e.target.result);
+                                //     };
+                                //     reader.readAsDataURL(file);
+                                // }
                                 var label = input.files[0].name;
                                 $('#image_en').next('label').text(label);
                                 var reader = new FileReader();

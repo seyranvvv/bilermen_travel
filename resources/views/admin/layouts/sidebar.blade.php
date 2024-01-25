@@ -83,7 +83,7 @@
         <div id="collapse2" class="collapse" aria-labelledby="heading2" data-parent="#accordionSidebar">
             <div class="bg-white py-2 collapse-inner rounded">
 
-                <a class="collapse-item ci-sidebar" href="{!! route('admin.post.index') !!}">@lang('transAdmin.posts')</a> 
+                <a class="collapse-item ci-sidebar" href="{!! route('admin.post.index') !!}">@lang('transAdmin.posts')</a>
                 <a class="collapse-item ci-sidebar" href="{!! route('admin.certificate.index') !!}">@lang('transAdmin.customers')</a>
 
                 <a class="collapse-item ci-sidebar" href="{!! route('admin.postBanner.index') !!}">@lang('transAdmin.baner')</a>
@@ -96,12 +96,12 @@
             aria-expanded="true" aria-controls="collapse3">
 
             <i class="fas fa-fw fa-newspaper"></i>
-            <span>@lang('transFront.services')</span>
+            <span>@lang('transFront.tours')</span>
         </a>
         <div id="collapse3" class="collapse" aria-labelledby="heading3" data-parent="#accordionSidebar">
             <div class="bg-white py-2 collapse-inner rounded">
 
-                <a class="collapse-item ci-sidebar" href="{!! route('admin.service.index') !!}">@lang('transFront.services')</a>
+                <a class="collapse-item ci-sidebar" href="{!! route('admin.service.index') !!}">@lang('transFront.tours')</a>
                 <a class="collapse-item ci-sidebar" href="{!! route('admin.serviceBanner.index') !!}">@lang('transAdmin.baner')</a>
                 {{-- <a class="collapse-item ci-sidebar" href="{!! route('admin.serviceAbout.index') !!}">@lang('transFront.our_services')</a> --}}
             </div>

@@ -134,8 +134,8 @@
     <!--FAQ One End-->
 
 
-    <!--Brand One Start-->
-    <section class="brand-one">
+
+    {{-- <section class="brand-one">
         <div class="container">
             <div class="row">
                 <div class="col-xl-3">
@@ -184,8 +184,8 @@
                 </div>
             </div>
         </div>
-    </section>
-    <!--Brand One End-->
+    </section> --}}
+
 
 
 

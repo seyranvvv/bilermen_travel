@@ -23,7 +23,7 @@
         </div>
     </section>
 
-
+{{--
     <!--Insurance Page One Start-->
     <section class="insurance-page-one">
         <div class="services-one__container">
@@ -50,7 +50,60 @@
             </div>
         </div>
     </section>
-    <!--Insurance Page One End-->
+    <!--Insurance Page One End--> --}}
+
+
+            <!--News One Start-->
+            <section class="news-carousel-page">
+                <div class="container">
+                    <div class="row">
+                        <div class="thm-owl__carousel owl-theme owl-carousel news-carousel carousel-dot-style"
+                            data-owl-options='{
+                            "items": 3,
+                            "margin": 30,
+                            "smartSpeed": 700,
+                            "loop":true,
+                            "autoplay": 6000,
+                            "nav":false,
+                            "dots":true,
+                            "navText": ["<span class=\"fa fa-angle-left\"></span>","<span class=\"fa fa-angle-right\"></span>"],
+                            "responsive":{
+                                "0":{
+                                    "items":1
+                                },
+                                "768":{
+                                    "items":2
+                                },
+                                "992":{
+                                    "items": 3
+                                }
+                            }
+                        }'>
+                        @foreach ($services as $service)
+                            <div class="item">
+                                <!--News One Single Start-->
+                                <div class="news-one__single">
+                                    <div class="news-one__img">
+                                        <img src="{!! Request::root() !!}{!! Storage::disk('local')->url('service/image/' . $service->img) !!}" alt="">
+                                        <div class="news-one__arrow-box">
+                                            <a href="news-details.html" class="news-one__arrow">
+                                                <span class="icon-right-arrow1"></span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="news-one__content">
+                                        <h3 class="news-one__title"><a href="{!! route('front.service.service_single', $service->slug) !!}">{{ $service->getTitle() }}</a></h3>
+                                        <p class="news-one__text line-clamp-4">{!! strip_tags(html_entity_decode($service->getName())) !!}</p>
+                                    </div>
+                                </div>
+                                <!--News One Single End-->
+                            </div>
+                        @endforeach
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--News One End-->
 
 
     {{-- <!--Benefits Two Start--> --}}

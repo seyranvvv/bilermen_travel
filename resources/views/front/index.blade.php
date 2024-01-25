@@ -68,7 +68,7 @@
     </section>
     <!--Main Slider End-->
 
-    <!--Feature One Start-->
+    {{-- <!--Feature One Start-->
     <section class="feature-one">
         <div class="container">
             <div class="feature-one__inner">
@@ -99,7 +99,7 @@
             </div>
         </div>
     </section>
-    <!--Feature One End-->
+    <!--Feature One End--> --}}
 
 
     <!--About One Start-->
@@ -142,7 +142,7 @@
                             </div>
                             <h2 class="section-title__title">{{ $about->getTitle() }}</h2>
                         </div>
-                        <p class="about-one__text-1"> {!! html_entity_decode($about->getName()) !!}</p>
+                        <p class="about-one__text-1"> {!! html_entity_decode(Str::words($about->getName(), 32, ' ...')) !!}</p>
 
                         <div class="about-one__btn-call">
                             <div class="about-one__btn-box">
@@ -210,7 +210,7 @@
                         <div class="services-one__top-left">
                             <div class="section-title text-left">
                                 <div class="section-sub-title-box">
-                                    <p class="section-sub-title">@lang('transFront.our_services')</p>
+                                    <p class="section-sub-title">@lang('transFront.our_tours')</p>
                                     <div class="section-title-shape-1">
                                         <img src="{{ asset('front/assets/images/shapes/section-title-shape-1.png') }}"
                                             alt="">
@@ -409,7 +409,7 @@
                         <div class="news-one__single">
                             <div class="news-one__img">
                                 <img src="{!! Request::root() !!}{!! Storage::disk('local')->url('post/image/' . $post->img) !!}" alt="">
-                 
+
                                 <div class="news-one__arrow-box">
                                     <a href="{!! route('front.post.singleNews', $post->slug) !!}" class="news-one__arrow">
                                         <span class="icon-right-arrow1"></span>

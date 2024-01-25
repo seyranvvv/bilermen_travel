@@ -115,7 +115,7 @@ class DashboardController extends Controller
             $subject = $data['subject'];
             $message = $data['message'];
             $messages->to('kerimberdi99@gmail.com', 'Hat')->subject('Hat')->setBody(
-                "                
+                "
                     <h2>$name</h2><br>
                     <h2>$email</h2><br>
                     <h2>$phone</h2><br>

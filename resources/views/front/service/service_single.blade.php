@@ -55,7 +55,7 @@
                     <div class="why-choose-two__right benefits-two__img">
                         <img src="{{ Storage::disk('local')->url($service->image_index) }}" alt="{{ $service->image_en }}">
                     </div>
-                    <div class="benefits-two__right mt-5">
+                    {{-- <div class="benefits-two__right mt-5">
                         <div class="section-title text-left">
                             <div class="section-sub-title-box">
                                 <p class="section-sub-title">Goşmaça</p>
@@ -77,12 +77,11 @@
                                     </div>
                                     <div class="text">
                                         <p>{{$extra}}</p>
-                                        {{-- <p><a href="{!! route('front.service.service_single', $service->slug) !!}">{{ $service->getTitle() }}</a></p> --}}
                                     </div>
                                 </li>
                             @endforeach
                         </ul>
-                    </div>
+                    </div> --}}
                 </div>
                 <div class="col-xl-6 col-lg-6">
 
@@ -91,63 +90,12 @@
             </div>
         </div>
     </section>
-    <!--Why Choose Two End-->
 
-     {{-- <!--Benefits Two Start-->
-    <section class="benefits-two">
-        <div class="container">
-            <div class="row">
-                <div class="col-xl-6 col-lg-6">
-                    <div class="benefits-two__left">
-                        <div class="benefits-two__img">
-                            <img src="{{ Storage::disk('local')->url($service->image_index) }}" alt="">
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-6 col-lg-6">
-                    <div class="benefits-two__right">
-                        <div class="section-title text-left">
-                            <div class="section-sub-title-box">
-                                <p class="section-sub-title">@lang('transFront.our_services')</p>
-                                <div class="section-title-shape-1">
-                                    <img src="{{ asset('front/assets/images/shapes/section-title-shape-1.png') }}" alt="">
-                                </div>
-                                <div class="section-title-shape-2">
-                                    <img src="{{ asset('front/assets/images/shapes/section-title-shape-2.png') }}" alt="">
-                                </div>
-                            </div>
-                            <h2 class="section-title__title">{{ $serviceAbout->getTitle() }}
-                            </h2>
-                        </div>
-                        <ul class="list-unstyled benefits-two__points">
-
-
-                            @foreach ($services as $service)
-                                <li>
-                                    <div class="icon">
-                                        <i class="fa fa-check"></i>
-                                    </div>
-                                    <div class="text">
-                                        <p><a href="{!! route('front.service.service_single', $service->slug) !!}">{{ $service->getTitle() }}</a></p>
-                                    </div>
-                                </li>
-                            @endforeach
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!--Benefits Two End--> --}}
-
-
-    <!--FAQ One Start-->
-    <section class="faq-one">
+<section class="faq-one">
         <div class="container">
             <div class="section-title text-center">
                 <div class="section-sub-title-box">
-                    <p class="section-sub-title">We always help</p>
-                    <div class="section-title-shape-1">
+                     <div class="section-title-shape-1">
                         <img src="assets/images/shapes/section-title-shape-1.png" alt="">
                     </div>
                     <div class="section-title-shape-2">

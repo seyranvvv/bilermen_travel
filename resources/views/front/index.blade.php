@@ -180,10 +180,10 @@
                     <div class="col-xl-3 col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="100ms">
                         <div class="counter-one__single">
                             <div class="counter-one__top">
-                                <div class="counter-one__icon">
+                                {{-- <div class="counter-one__icon">
                                     <img src="{{ Storage::disk('local')->url('icon/' . $counter->icon) }}"
                                         alt="{{ $counter->icon }}" width="60px">
-                                </div>
+                                </div> --}}
                                 <div class="counter-one__count-box" style="overflow: hidden">
                                     <div class="counter-one__count-box-inner">
                                         <h3 class="odometer" data-count="{{ $counter->counter }}">00</h3>

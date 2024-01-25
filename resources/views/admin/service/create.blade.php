@@ -174,7 +174,7 @@
                     <div class="custom-file">
                         <input id="image_en" type="file" multiple
                                class="custom-file-input {{ $errors->has('image_en') ? ' is-invalid' : '' }}"
-                               name="image_index[]" accept="image/*" onChange="image_enUpload(this);">
+                               name="image_index" accept="image/*" onChange="image_enUpload(this);">
                         <label class="custom-file-label" for="image_en">. . .</label>
                     </div>
                     @if ($errors->has('image_en'))

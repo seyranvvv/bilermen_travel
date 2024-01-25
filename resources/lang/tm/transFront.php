@@ -121,7 +121,6 @@ return [
     'our_tours' => 'Biziň syýahatlarymyz',
     'services' => 'Hyzmatlarymyz',
     'tour_itinerary' => 'Syýahat programmasy',
-    'tour_itinerary' => 'Программа тура',
     'it' => 'IT merkezi',
     'home_image' => 'Uly suraty',
     'banner_image' => 'Banner suraty',

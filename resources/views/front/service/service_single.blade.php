@@ -20,7 +20,7 @@
                 <ul class="thm-breadcrumb list-unstyled">
                     <li><a href="{{ route('index') }}">@lang('transFront.home')</a></li>
                     <li><span>/</span></li>
-                    <li>@lang('transFront.services')</li>
+                    <li>@lang('transFront.tours')</li>
                 </ul>
                 <h2>{{ $service->getTitle() }}</h2>
             </div>

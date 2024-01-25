@@ -92,9 +92,6 @@
                                         </div>
                                     </div>
                                     <div class="news-one__content">
-                                        <div class="services-one__icon">
-                                            <img src="{!! Request::root() !!}{!! Storage::disk('local')->url('service/image/' . $service->icon) !!}" alt="" width="50px">
-                                        </div>
                                         <h3 class="news-one__title"><a href="{!! route('front.service.service_single', $service->slug) !!}">{{ $service->getTitle() }}</a></h3>
                                         <p class="news-one__text line-clamp-4">{!! strip_tags(html_entity_decode($service->getName())) !!}</p>
                                     </div>

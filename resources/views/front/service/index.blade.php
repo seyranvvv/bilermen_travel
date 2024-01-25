@@ -1,9 +1,9 @@
 @extends('front.layouts.app')
 @section('title')
-    @lang('transFront.services') | @lang('transFront.app-name')
+    @lang('transFront.tours') | @lang('transFront.app-name')
 @endsection
 @section('keywords')
-    @lang('transFront.services')
+    @lang('transFront.tours')
 @endsection
 @section('content')
     <!--Page Header Start-->
@@ -16,9 +16,9 @@
                 <ul class="thm-breadcrumb list-unstyled">
                     <li><a href="{{ route('index') }}">@lang('transFront.home')</a></li>
                     <li><span>/</span></li>
-                    <li>@lang('transFront.services')</li>
+                    <li>@lang('transFront.tours')</li>
                 </ul>
-                <h2>@lang('transFront.services')</h2>
+                <h2>@lang('transFront.tours')</h2>
             </div>
         </div>
     </section>

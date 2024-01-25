@@ -3,7 +3,7 @@
     {{ $service->getTitle() }} | @lang('transFront.app-name')
 @endsection
 @section('keywords')
-    @lang('transFront.services')
+    @lang('transFront.tours')
 @endsection
 @section('content')
     <!--Page Header Start-->
@@ -36,7 +36,7 @@
                     <div class="why-choose-two__left">
                         {{-- <div class="section-title text-left"> --}}
                         {{-- <div class="section-sub-title-box">
-                                <p class="section-sub-title">@lang('transFront.services')</p>
+                                <p class="section-sub-title">@lang('transFront.tours')</p>
                                 <div class="section-title-shape-1">
                                     <img src="{{ asset('front/assets/images/shapes/section-title-shape-1.png') }}"
                                         alt="">
@@ -154,9 +154,12 @@
                         <img src="assets/images/shapes/section-title-shape-2.png" alt="">
                     </div>
                 </div>
-                <h2 class="section-title__title">Tur barada gündelik geçiriljek<br> çäreler</h2>
+                <h2 class="section-title__title">@lang('transFront.tour_itinerary')</h2>
             </div>
             <div class="row">
+                @php
+                    $index = 0
+                @endphp
                 @foreach ($activitiesChunk as $activities)
                     <div class="col-xl-6 col-lg-6">
                         <div class="faq-one__single">
@@ -164,7 +167,7 @@
                                 @foreach ($activities as $activity)
                                     <div class="accrodion">
                                         <div class="accrodion-title">
-                                            <h4><span>?</span> {{$activity->title_tm}}</h4>
+                                            <h4><span>{{$index+=1}}</span> {{$activity->title_tm}}</h4>
                                         </div>
                                         <div class="accrodion-content">
                                             <div class="inner">

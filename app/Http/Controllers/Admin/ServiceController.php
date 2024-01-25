@@ -36,11 +36,11 @@ class ServiceController extends Controller
     public function store(Request $request)
     {
         $request->validate([
-            'image' => 'mimes:jpeg,png,jpg,webp|max:2048|dimensions:width=290,height=197',
+            'image' => 'max:2048|dimensions:width=290,height=197',
             // 'image_index' => 'mimes:jpeg,png,jpg,webp|max:2048|dimensions:width=500,height=500',
-            'image_index' => 'mimes:jpeg,png,jpg,webp|max:2048|dimensions:height=500',
-            'image_banner' => 'mimes:jpeg,png,jpg,webp|max:2048|dimensions:width=1221,height=310',
-            'icon' => 'mimes:jpeg,png,jpg,webp,svg|max:2048',
+            'image_index' => 'max:2048|dimensions:width=500,height=500',
+            'image_banner' => 'max:2048|dimensions:width=1221,height=310',
+            'icon' => 'max:2048',
             'title_tm' => 'required',
             'name_tm' => 'required',
         ]);

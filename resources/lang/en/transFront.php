@@ -116,7 +116,10 @@ return [
 
     'rights' => 'All rights reserved.',
     'habarlashmak' => 'Contact with us',
-    'services' => 'Tours',
+    'tours' => 'Tours',
+    'our_tours' => 'Our tours',
+    'services' => 'Services',
+    'tour_itinerary' => 'Tour itinerary',
     'it' => 'IT Center',
     'home_image' => 'Big pictures',
     'banner_image' => 'Banner picture',

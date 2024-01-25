@@ -121,7 +121,7 @@
 
                                     <li
                                         class="{{ Route::currentRouteName() == 'front.service.index' || Route::currentRouteName() == 'front.service.service_single' ? 'current' : '' }}">
-                                        <a href="{{ route('front.service.index') }}">@lang('transFront.services') </a>
+                                        <a href="{{ route('front.service.index') }}">@lang('transFront.tours') </a>
 
                                     </li>
 
@@ -137,7 +137,7 @@
                                         <a href="{{ route('front.contact') }}">@lang('transFront.contact')</a>
                                     </li>
 
-                                  
+
 
                                     {{--  <li   class="{{Route::currentRouteName() == 'front.about.travel' ? 'current ' : ''}}">
                                         <a href="{{ route('front.about.travel') }}">@lang('transFront.travel')</a>

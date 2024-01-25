@@ -1,9 +1,9 @@
 @extends('admin.layouts.app')
 @section('content')
     <div class="d-flex align-items-center justify-content-between">
-        <div class="h3 mb-0">@lang('transFront.services')</div>
+        <div class="h3 mb-0">@lang('transFront.tours')</div>
         <a href="{{ route('admin.service.create') }}" class="btn btn-sm btn-danger">
-            <i class="fas fa-plus"></i> @lang('transFront.services')
+            <i class="fas fa-plus"></i> @lang('transFront.tour')
         </a>
     </div>
 
@@ -94,7 +94,7 @@
         @empty
             <tr>
                 <td colspan="5" class="text-center bg-light text-secondary">
-                    <i class="fas fa-exclamation-circle"></i> @lang('transFront.services') @lang('transAdmin.not-found')
+                    <i class="fas fa-exclamation-circle"></i> @lang('transFront.tours') @lang('transAdmin.not-found')
                 </td>
             </tr>
         @endforelse

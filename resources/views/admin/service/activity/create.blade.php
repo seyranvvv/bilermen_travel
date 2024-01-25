@@ -5,11 +5,11 @@
     <div class="d-flex align-items-center justify-content-between">
         <div class="h4 mb-0">
             <a href="{{ route('admin.service.index') }}">
-                <i class="fas fa-caret-left"></i> @lang('transFront.services')
+                <i class="fas fa-caret-left"></i> @lang('transFront.tours')
             </a>
             <span class="text-gray-500">/</span>
             <a href="{{ route('admin.service.index') }}">
-                <i class="fas fa-caret-left"></i> @lang('transFront.tour_activities')
+                <i class="fas fa-caret-left"></i> @lang('transFront.tour_itinerary')
             </a>
             <span class="text-gray-500">/</span>
             @lang('transAdmin.create')

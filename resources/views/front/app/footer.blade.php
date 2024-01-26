@@ -58,7 +58,7 @@
                                     <span class="icon-telephone"></span>
                                 </div>
                                 <div class="footer-widget__phone-text">
-                                    <p>{{ $district->getName() }}</p>
+                                    {{-- <p>{{ $district->getName() }}</p> --}}
 
                                     <a href="tel:{{ $district->phone }}">{{ $district->phone }}</a>
                                 </div>

@@ -20,17 +20,5 @@ class DistrictSeeder extends Seeder
         District::updateOrCreate([
             'name_tm' => 'Dashoguz welayaty',
         ]);
-        District::updateOrCreate([
-            'name_tm' => 'Mary welayaty',
-        ]);
-        District::updateOrCreate([
-            'name_tm' => 'Lebap welayaty',
-        ]);
-        District::updateOrCreate([
-            'name_tm' => 'Balkan welayaty',
-        ]);
-        District::updateOrCreate([
-            'name_tm' => 'Ahal welayaty',
-        ]);
     }
 }

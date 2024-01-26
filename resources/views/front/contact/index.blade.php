@@ -183,7 +183,7 @@
             </div>
 
 
-            <div class="row">
+            {{-- <div class="row">
                 @foreach ($districts as $district)
                     <div class="col-xl-4 col-lg-4 py-5">
                         <div class="contact-page__left">
@@ -199,7 +199,7 @@
                                             alt="">
                                     </div>
                                 </div>
-                                {{-- <h2 class="section-title__title">{{ $contactText->getName() }}</h2> --}}
+
                             </div>
                             <div class="mt-3 contact-page__call-email">
                                 <div class="contact-page__call-icon">
@@ -214,23 +214,13 @@
                                 </div>
 
                             </div>
-                            {{-- <div class="mt-4 contact-page__call-email">
-                                <div class="contact-page__call-icon">
-                                    <i class="fas fa-mail-bulk"></i>
-                                </div>
-                                <div class="contact-page__call-email-content">
-                                    <h4>
-                                        <a href="mailto:{{ $contact->email }}"
-                                            class=" pt-3 contact-page__email">{{ $contact->email }}</a>
-                                    </h4>
-                                </div>
-                            </div> --}}
+
                             <p class="contact-page__location-text">{!! html_entity_decode($district->getAddress()) !!}</p>
                         </div>
                     </div>
                 @endforeach
 
-            </div>
+            </div> --}}
         </div>
     </section>
 

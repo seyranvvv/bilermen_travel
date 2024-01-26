@@ -54,7 +54,7 @@
                     <div class="about-four__right">
                         <div class="section-title text-left">
                             <div class="section-sub-title-box ms-0 ms-sm-5">
-                                <p class="section-sub-title">{{ optional($projectName)->getName() }}</p>
+                                <p class="section-sub-title">@lang('transFront.app-name')</p>
                                 <div class="section-title-shape-1 d-none d-sm-block">
                                     <img src="{{ asset('front/assets/images/shapes/section-title-shape-1.png') }}"
                                         alt="">

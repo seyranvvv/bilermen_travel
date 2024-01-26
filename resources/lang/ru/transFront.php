@@ -10,7 +10,7 @@ return [
 
     'sahypalar' => 'Наши страницы',
     'hojalyk_jemgyyeti' => 'Страховая Компания «ХАЗАР АТИЯЧЛАНДЫРЫШ» ОАО',
-    'app-name' => 'Bilermen Nesil',
+    'app-name' => 'Билермен Несил',
     'search' => 'Поиск',
     'search-input' => 'название книги, автор или издатель',
     'cart' => 'Корзина',

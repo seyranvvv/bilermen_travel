@@ -161,6 +161,19 @@ Route::group(['namespace' => 'Admin', 'prefix' => 'admin', 'as' => 'admin.', 'mi
     Route::put('/service/{service}/activities/{activity}', 'ServiceController@activityUpdate')->name('service.activity.update');
     Route::delete('/service/{service}/activities/{activity}', 'ServiceController@activityDelete')->name('service.activity.delete');
 
+    Route::get('/visas', 'VisaController@index')->name('visa.index');
+    Route::get('/visas/create', 'VisaController@create')->name('visa.create');
+    Route::post('/visas', 'VisaController@store')->name('visa.store');
+    Route::get('/visas/{visa}/edit', 'VisaController@edit')->name('visa.edit');
+    Route::put('/visas/{visa}', 'VisaController@update')->name('visa.update');
+    Route::delete('/visas/{visa}', 'VisaController@delete')->name('visa.delete');
+
+    Route::get('/visaBanner', 'VisaBannerController@index')->name('visaBanner.index');
+    Route::get('/visaBanner/create', 'VisaBannerController@create')->name('visaBanner.create');
+    Route::post('/visaBanner', 'VisaBannerController@store')->name('visaBanner.store');
+    Route::get('/visaBanner/{id}/edit', 'VisaBannerController@edit')->name('visaBanner.edit');
+    Route::put('/visaBanner/{id}', 'VisaBannerController@update')->name('visaBanner.update');
+    Route::delete('/visaBanner/{id}', 'VisaBannerController@delete')->name('visaBanner.delete');
 
 
 
@@ -267,6 +280,7 @@ Route::group(['namespace' => 'Front'], function () {
     Route::get('/biz-barada', 'AboutController@index')->name('front.about.index');
     Route::get('/hyzmatlar', 'ServiceController@index')->name('front.service.index');
     Route::get('/hyzmat/{slug}', 'ServiceController@single')->name('front.service.service_single');
+    Route::get('/visas', 'VisaController@index')->name('front.visa.index');
     Route::get('/habarlar', 'PostController@index')->name('front.post.index');
     Route::get('/habar/{slug}', 'PostController@single')->name('front.post.singleNews');
     Route::get('/mushderiler', 'CustomerController@index')->name('front.customers.index');

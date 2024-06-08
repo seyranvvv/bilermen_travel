@@ -149,6 +149,7 @@ return [
     'title_travel' => 'Ätiýaçlandyryş Kompaniýasy "Hazar Ätiýaçlandyryş" AGPJ-i',
     'title_logistics' => 'Ätiýaçlandyryş Kompaniýasy "Hazar Ätiýaçlandyryş" AGPJ-i',
     'title_advertisement' => 'Ätiýaçlandyryş Kompaniýasy "Hazar Ätiýaçlandyryş" AGPJ-i',
-
+    'visas' => 'Wisalar',
+    'visa' => 'Wisa',
 
 ];

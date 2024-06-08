@@ -141,4 +141,6 @@ return [
     'title_travel' => 'Insurance Company «HAZAR ATIYACHLANDYRYSH» JSC',
     'title_logistics' => 'Insurance Company «HAZAR ATIYACHLANDYRYSH» JSC',
     'title_advertisement' => 'Insurance Company «HAZAR ATIYACHLANDYRYSH» JSC',
+    'visas' => 'Visas',
+    'visa' => 'Visa',
 ];

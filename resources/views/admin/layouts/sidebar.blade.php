@@ -108,6 +108,23 @@
         </div>
     </li>
 
+    <li class="nav-item" id="navItem4">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapse4"
+            aria-expanded="true" aria-controls="collapse4">
+
+            <i class="fas fa-fw fa-newspaper"></i>
+            <span>@lang('transFront.visas')</span>
+        </a>
+        <div id="collapse4" class="collapse" aria-labelledby="heading4" data-parent="#accordionSidebar">
+            <div class="bg-white py-2 collapse-inner rounded">
+
+                <a class="collapse-item ci-sidebar" href="{!! route('admin.visa.index') !!}">@lang('transFront.visas')</a>
+                <a class="collapse-item ci-sidebar" href="{!! route('admin.visaBanner.index') !!}">@lang('transAdmin.baner')</a>
+                {{-- <a class="collapse-item ci-sidebar" href="{!! route('admin.serviceAbout.index') !!}">@lang('transFront.our_services')</a> --}}
+            </div>
+        </div>
+    </li>
+
 
 
     {{-- <li class="nav-item" id="navItem4">

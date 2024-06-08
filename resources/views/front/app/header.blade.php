@@ -136,6 +136,9 @@
                                     <li class="{{ Route::currentRouteName() == 'front.contact' ? 'current ' : '' }}">
                                         <a href="{{ route('front.contact') }}">@lang('transFront.contact')</a>
                                     </li>
+                                    <li class="{{ Route::currentRouteName() == 'front.visa.index' ? 'current ' : '' }}">
+                                        <a href="{{ route('front.visa.index') }}">@lang('transFront.visas')</a>
+                                    </li>
 
 
 

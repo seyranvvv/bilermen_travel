@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Front;
 use App\Certificate;
 use App\Contact;
 use App\ContactWith;
+use App\District;
 use App\Greet;
 use App\Http\Controllers\Controller;
 use App\Visa;
@@ -26,6 +27,10 @@ class VisaController extends Controller
         $greets = Greet::all();
         $partnersText = Translation::whereslug('partners_text')->first();
 
+
+        $contactText = Translation::whereslug('contact_us_text')->first();
+        $districts = District::all();
+
         return view('front.visa.index')->with([
             'contact' => $contact,
             'contactWith' => $contactWith,
@@ -35,6 +40,8 @@ class VisaController extends Controller
             'greets' => $greets,
             'visas' => $visas,
             'visasChunk' => $visasChunk,
+            'contactText' => $contactText,
+            'districts' => $districts,
         ]);
     }
 }

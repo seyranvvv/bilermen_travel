@@ -5,6 +5,7 @@ namespace App\Providers;
 use App\Contact;
 use App\District;
 use App\Service;
+use App\Country;
 use Illuminate\Support\ServiceProvider;
 
 class AppServiceProvider extends ServiceProvider
@@ -19,10 +20,12 @@ class AppServiceProvider extends ServiceProvider
         view()->composer('front.app.header', function ($view) {
             $services = Service::orderBy('order')->get();
             $contact = Contact::first();
+            $countries = Country::orderBy('order')->get();
 //            $contact = Contact::first();
             $view->with([
                 'services' => $services,
                 'contact' => $contact,
+                'countries' => $countries
 //                'contact' => $contact,/
             ]);
         });

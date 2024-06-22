@@ -161,6 +161,20 @@ Route::group(['namespace' => 'Admin', 'prefix' => 'admin', 'as' => 'admin.', 'mi
     Route::put('/service/{service}/activities/{activity}', 'ServiceController@activityUpdate')->name('service.activity.update');
     Route::delete('/service/{service}/activities/{activity}', 'ServiceController@activityDelete')->name('service.activity.delete');
 
+
+    Route::get('/country', 'CountryController@index')->name('country.index');
+    Route::get('/country/create', 'CountryController@create')->name('country.create');
+    Route::post('/country', 'CountryController@store')->name('country.store');
+    Route::get('/country/{id}/edit', 'CountryController@edit')->name('country.edit');
+    Route::put('/country/{id}', 'CountryController@update')->name('country.update');
+    Route::delete('/country/{id}', 'CountryController@delete')->name('country.delete');
+    Route::get('/country/{country}/tickets', 'CountryController@ticketIndex')->name('country.ticket.index');
+    Route::get('/country/{country}/tickets/create', 'CountryController@ticketCreate')->name('country.ticket.create');
+    Route::post('/country/{country}/tickets', 'CountryController@ticketStore')->name('country.ticket.store');
+    Route::get('/country/{country}/tickets/{ticket}/edit', 'CountryController@ticketEdit')->name('country.ticket.edit');
+    Route::put('/country/{country}/tickets/{ticket}', 'CountryController@ticketUpdate')->name('country.ticket.update');
+    Route::delete('/country/{country}/tickets/{ticket}', 'CountryController@ticketDelete')->name('country.ticket.delete');
+
     Route::get('/visas', 'VisaController@index')->name('visa.index');
     Route::get('/visas/create', 'VisaController@create')->name('visa.create');
     Route::post('/visas', 'VisaController@store')->name('visa.store');
@@ -280,6 +294,11 @@ Route::group(['namespace' => 'Front'], function () {
     Route::get('/biz-barada', 'AboutController@index')->name('front.about.index');
     Route::get('/hyzmatlar', 'ServiceController@index')->name('front.service.index');
     Route::get('/hyzmat/{slug}', 'ServiceController@single')->name('front.service.service_single');
+
+    Route::get('/country/{slug}', 'CountryController@single')->name('front.country.country_single');
+
+
+
     Route::get('/visas', 'VisaController@index')->name('front.visa.index');
     Route::get('/habarlar', 'PostController@index')->name('front.post.index');
     Route::get('/habar/{slug}', 'PostController@single')->name('front.post.singleNews');

@@ -204,6 +204,24 @@
     </li>
 
 
+
+    <li class="nav-item" id="navItem8">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapse8"
+            aria-expanded="true" aria-controls="collapse8">
+            <i class="fas fa-fw fa-user-shield"></i>
+            <span>@lang('transAdmin.countries')</span>
+        </a>
+        <div id="collapse8" class="collapse" aria-labelledby="heading8" data-parent="#accordionSidebar">
+            <div class="bg-white py-2 collapse-inner rounded">
+
+                <a class="collapse-item ci-sidebar" href="{!! route('admin.country.index') !!}">@lang('transAdmin.countries')</a>
+
+            </div>
+        </div>
+    </li>
+
+
+
     <hr class="sidebar-divider d-none d-md-block">
 
     <div class="text-center d-none d-md-inline">

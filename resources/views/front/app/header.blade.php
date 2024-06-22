@@ -118,6 +118,18 @@
                                         <a href="{{ route('front.about.index') }}">@lang('transFront.abouts') </a>
 
                                     </li>
+                                    <!-- <li class="{{ Route::currentRouteName() == 'front.visa.index' ? 'current ' : '' }}">
+                                        <a href="{{ route('front.visa.index') }}">@lang('transFront.visas')</a>
+                                    </li> -->
+
+                                    <li class="dropdown">
+                                                <a href="#">@lang('transFront.visas')</a>
+                                                <ul>
+                                                @foreach ($countries as $country)
+                                                    <li><a href="{!! route('front.country.country_single', $country->slug) !!}">{!! strip_tags(html_entity_decode($country->getName())) !!}</a></li>
+                                                @endforeach
+                                                </ul>
+                                            </li>
 
                                     <li
                                         class="{{ Route::currentRouteName() == 'front.service.index' || Route::currentRouteName() == 'front.service.service_single' ? 'current' : '' }}">
@@ -132,13 +144,12 @@
                                     <li class="{{ Route::currentRouteName() == 'front.post.index' ? 'current ' : '' }}">
                                         <a href="{{ route('front.post.index') }}">@lang('transAdmin.posts')</a>
                                     </li>
+                                    
 
                                     <li class="{{ Route::currentRouteName() == 'front.contact' ? 'current ' : '' }}">
                                         <a href="{{ route('front.contact') }}">@lang('transFront.contact')</a>
                                     </li>
-                                    <li class="{{ Route::currentRouteName() == 'front.visa.index' ? 'current ' : '' }}">
-                                        <a href="{{ route('front.visa.index') }}">@lang('transFront.visas')</a>
-                                    </li>
+                                    
 
 
 

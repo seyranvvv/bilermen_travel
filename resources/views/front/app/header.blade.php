@@ -126,7 +126,7 @@
                                                 <a href="#">@lang('transFront.visas')</a>
                                                 <ul>
                                                 @foreach ($countries as $country)
-                                                    <li><a href="{!! route('front.country.country_single', $country->slug) !!}">{!! strip_tags(html_entity_decode($country->getName())) !!}</a></li>
+                                                    <li><a href="{!! route('front.country.country_single', $country->slug) !!}">{!! strip_tags(html_entity_decode($country->getTitle())) !!}</a></li>
                                                 @endforeach
                                                 </ul>
                                             </li>

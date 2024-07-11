@@ -422,7 +422,7 @@ class CountryController extends Controller
             'success' => $success
             ]);
         }
-    public function ticketEdit(Country $country, Ticket $Ticket)
+    public function ticketEdit(Country $country, Ticket $ticket)
     {
         $obj = $ticket;
         return view('admin.country.ticket.edit', compact('obj', 'country'));

@@ -108,7 +108,7 @@
         </div>
     </li>
 
-    <li class="nav-item" id="navItem4">
+    <!-- <li class="nav-item" id="navItem4">
         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapse4"
             aria-expanded="true" aria-controls="collapse4">
 
@@ -123,27 +123,11 @@
                 {{-- <a class="collapse-item ci-sidebar" href="{!! route('admin.serviceAbout.index') !!}">@lang('transFront.our_services')</a> --}}
             </div>
         </div>
-    </li>
+    </li> -->
 
 
 
-    {{-- <li class="nav-item" id="navItem4">
-        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapse4"
-            aria-expanded="true" aria-controls="collapse4">
-
-            <i class="fas fa-fw fa-newspaper"></i>
-            <span>@lang('transAdmin.shop')</span>
-        </a>
-        <div id="collapse4" class="collapse" aria-labelledby="heading4" data-parent="#accordionSidebar">
-            <div class="bg-white py-2 collapse-inner rounded">
-                <a class="collapse-item ci-sidebar" href="{!! route('admin.product.index') !!}">@lang('transFront.products')</a>
-
-                <a class="collapse-item ci-sidebar" href="{!! route('admin.category.index') !!}">@lang('transAdmin.category')</a>
-
-                <a class="collapse-item ci-sidebar" href="{!! route('admin.shopBanner.index') !!}">@lang('transAdmin.baner')</a>
-            </div>
-        </div>
-    </li> --}}
+    
 
 
     <li class="nav-item" id="navItem6">

@@ -19,7 +19,7 @@ class CountryController extends Controller
             ->whereActive(true)
             ->with('tickets')
             ->firstOrFail();
-        $tickets = $country->tickets;
+        $tickets = $country->tickets()->orderBy('order')->get();
         $half = $tickets->count() / 2;
         $ticketsChunk = $tickets->split(2);
         $contact = Contact::whereType('main')->first();
